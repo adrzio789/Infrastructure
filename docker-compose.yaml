@@ -12,7 +12,7 @@ services:
       - 5000:5000
     restart: always
     volumes:
-      - ./jenkins_controller/jenkins.yml:/usr/share/jenkins/ref/jenkins.yml
+      - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
 
   jenkins_agent:
     build: ./jenkins_agent
